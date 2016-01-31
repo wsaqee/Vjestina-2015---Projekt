@@ -1,22 +1,25 @@
+-Relese.rar je zipana verzija foldera Relese
+
+
 PROJEKT
 PrintStats
 
-Rijeè je o programu koji dri statistièke podatke o pojedinom pisaèu. Prati podatke kao što su broj ispisanih stranica u nekom vremenskom razdoblju (ili za vrijeme trajanje jednog tonera/tinte), koji korisnik i u koje vrijeme ispisuje koliko stranica i slièno.
+RijeÄ je o programu koji drÅ¾i statistiÄke podatke o pojedinom pisaÄu. Prati podatke kao Å¡to su broj ispisanih stranica u nekom vremenskom razdoblju (ili za vrijeme trajanje jednog tonera/tinte), koji korisnik i u koje vrijeme ispisuje koliko stranica i sliÄno.
 
-Ideju za projekt sam dobio kad sam prije nekoliko mjeseci iz èiste radoznalosti htio saznati koliki je stvarni broj stranica koje mogu isprintati s jednim novim tonerom i ima li razlike meğu zamjenskim tonerima razlièitih proizvoğaèa. Buduæi da moj kuæni printer nema nikakvu programsku podršku u tom smislu, prvo sam pokušao voditi pisanu evidenciju, ali ostali èlanovi obitelji nisu uspješno sudjelovali u tome. Zato sam potraio softversko rješenje na Internetu, meğutim nisam našao nijedan freeware program koji bi mi omoguæio uvid u upotrebljivu statistiku o korištenju printera.
-Program bi osim jednostavne kuæne upotrebe sigurno mogao posluiti i poveæanju ekonomiènosti manjih poduzeæa.
+Ideju za projekt sam dobio kad sam prije nekoliko mjeseci iz Äiste radoznalosti htio saznati koliki je stvarni broj stranica koje mogu isprintati s jednim novim tonerom i ima li razlike meÄ‘u zamjenskim tonerima razliÄitih proizvoÄ‘aÄa. BuduÄ‡i da moj kuÄ‡ni printer nema nikakvu programsku podrÅ¡ku u tom smislu, prvo sam pokuÅ¡ao voditi pisanu evidenciju, ali ostali Älanovi obitelji nisu uspjeÅ¡no sudjelovali u tome. Zato sam potraÅ¾io softversko rjeÅ¡enje na Internetu, meÄ‘utim nisam naÅ¡ao nijedan freeware program koji bi mi omoguÄ‡io uvid u upotrebljivu statistiku o koriÅ¡tenju printera.
+Program bi osim jednostavne kuÄ‡ne upotrebe sigurno mogao posluÅ¾iti i poveÄ‡anju ekonomiÄnosti manjih poduzeÄ‡a.
 Glavne karakteristike programa bi bile:
-•	Dranje evidencije o svim ispisanim stranicama na pojedinom pisaèu, odnosno printing taskova zadanih s raèunala na koje je spojen pisaè
-•	Razlikovanje ispisa u boji ili crno bijelo
-•	Kvaliteta ispisa (Automatic, High, Normal, Draft)
-•	Prosjeèna brzina ispisa pojedinog pisaèa
-•	Informacije o preostaloj tinti u pisaèu
-•	Prikaz potrošnje po korisniku (Windows useru) i po pisaèu
-•	Statistika korištenja printera u proizvoljnom vremenskom intervalu
-•	Export statistike u .xls
-•	Prikaz troškova printanja po stranici u odreğenom vremenskom intervalu s obzirom na unesene cijene papira i tonera te datume izmjene tonera
+â€¢	DrÅ¾anje evidencije o svim ispisanim stranicama na pojedinom pisaÄu, odnosno printing taskova zadanih s raÄunala na koje je spojen pisaÄ
+â€¢	Razlikovanje ispisa u boji ili crno bijelo
+â€¢	Kvaliteta ispisa (Automatic, High, Normal, Draft)
+â€¢	ProsjeÄna brzina ispisa pojedinog pisaÄa
+â€¢	Informacije o preostaloj tinti u pisaÄu
+â€¢	Prikaz potroÅ¡nje po korisniku (Windows useru) i po pisaÄu
+â€¢	Statistika koriÅ¡tenja printera u proizvoljnom vremenskom intervalu
+â€¢	Export statistike u .xls
+â€¢	Prikaz troÅ¡kova printanja po stranici u odreÄ‘enom vremenskom intervalu s obzirom na unesene cijene papira i tonera te datume izmjene tonera
 
-Program bi se bazirao oko PrintQueue klase i podataka koji se mogu prikupiti iz print queue-a te pojedinog print job-a. Obzirom da ne postoji event na koji bi se mogli zapisati svi podaci, koristio bi se timer sa kojim bi uzorkovali print queue. Pošto je ispis stranica relativno spor, timer bi mogao uzorkovati print queue svaku sekundu. Svi podaci bi se spremali u neku .bin ili .log datoteku i tako se napravila baza podataka. Na temelju spremljenih podataka, u programu bi se moglo filtrirati sve ispise po odreğenim parametnima podataka ili napraviti grafièki prikaz podataka. Filtrirani podaci bi se takoğer mogli prebaciti u Excel format.
+Program bi se bazirao oko PrintQueue klase i podataka koji se mogu prikupiti iz print queue-a te pojedinog print job-a. Obzirom da ne postoji event na koji bi se mogli zapisati svi podaci, koristio bi se timer sa kojim bi uzorkovali print queue. PoÅ¡to je ispis stranica relativno spor, timer bi mogao uzorkovati print queue svaku sekundu. Svi podaci bi se spremali u neku .bin ili .log datoteku i tako se napravila baza podataka. Na temelju spremljenih podataka, u programu bi se moglo filtrirati sve ispise po odreÄ‘enim parametnima podataka ili napraviti grafiÄki prikaz podataka. Filtrirani podaci bi se takoÄ‘er mogli prebaciti u Excel format.
 
 
 
